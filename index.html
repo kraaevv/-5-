@@ -1,0 +1,1792 @@
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+<script>
+  function initFeaturedCollection() {
+    let item = document.querySelector('.featured-collection-slider-template--23813059936605__ss_featured_collection_izCfEY');
+    let perMobile = item.getAttribute('data-preview-mobile');
+    let perMobileBig = item.getAttribute('data-preview-mobile-big');
+    let perDesktop = item.getAttribute('data-preview-desktop');
+    const slider = new Swiper('.featured-collection-slider-template--23813059936605__ss_featured_collection_izCfEY', {
+      speed: 300,
+      spaceBetween: 20,
+      slidesPerView: 2,
+      navigation: {
+        nextEl: '.featured-collection-btn-next-template--23813059936605__ss_featured_collection_izCfEY',
+        prevEl: '.featured-collection-btn-prev-template--23813059936605__ss_featured_collection_izCfEY'
+      },
+      pagination: {
+        el: '.featured-collection-pagination-template--23813059936605__ss_featured_collection_izCfEY',
+        type: 'progressbar'
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: perMobile,
+        },
+        768: {
+          slidesPerView: perMobileBig,
+        },
+        1024: {
+          slidesPerView: perDesktop,
+        }
+      }
+    })
+  }
+  initFeaturedCollection();
+  document.addEventListener('DOMContentLoaded', initFeaturedCollection);
+  if (Shopify.designMode) {
+     document.addEventListener('DOMContentLoaded', initFeaturedCollection);
+     document.addEventListener('shopify:section:select', initFeaturedCollection);
+     document.addEventListener('shopify:section:deselect', initFeaturedCollection);
+     document.addEventListener('shopify:inspector:activate', initFeaturedCollection);
+     document.addEventListener('shopify:section:unload', initFeaturedCollection);
+     document.addEventListener('shopify:section:load', initFeaturedCollection);
+     document.addEventListener('shopify:section:settings:change', initFeaturedCollection);
+  }
+
+</script>
+
+
+</div><div id="shopify-section-template--23813059936605__ss_featured_collection_4KxzBW" class="shopify-section"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/><style data-shopify>@font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.bcd3d09dcb631dec5544b8fb7b154ff234a44630.woff2?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=16017b6f0ab3e23804ba46a95e934b9ecb71b31bfc6b01b8919e4fa15d73a239") format("woff2"),
+       url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.a2d012304becc2a26f1ded1acc136fcab85c9afd.woff?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=0ea943b25f0646b4f098cc0117c13f5d7b17a9c104fab854bcc440bf9054fc85") format("woff");
+}
+
+  @font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.bcd3d09dcb631dec5544b8fb7b154ff234a44630.woff2?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=16017b6f0ab3e23804ba46a95e934b9ecb71b31bfc6b01b8919e4fa15d73a239") format("woff2"),
+       url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.a2d012304becc2a26f1ded1acc136fcab85c9afd.woff?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=0ea943b25f0646b4f098cc0117c13f5d7b17a9c104fab854bcc440bf9054fc85") format("woff");
+}
+
+  @font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.bcd3d09dcb631dec5544b8fb7b154ff234a44630.woff2?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=16017b6f0ab3e23804ba46a95e934b9ecb71b31bfc6b01b8919e4fa15d73a239") format("woff2"),
+       url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.a2d012304becc2a26f1ded1acc136fcab85c9afd.woff?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=0ea943b25f0646b4f098cc0117c13f5d7b17a9c104fab854bcc440bf9054fc85") format("woff");
+}
+
+  
+  
+
+  .section-template--23813059936605__ss_featured_collection_4KxzBW {
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+
+  .section-template--23813059936605__ss_featured_collection_4KxzBW-settings {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .featured-collection-top-template--23813059936605__ss_featured_collection_4KxzBW h2 {
+    margin: 0;
+    font-size: 34.0px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-align: left;
+  }
+
+  .featured-collection-wrapper-template--23813059936605__ss_featured_collection_4KxzBW > p {
+    margin: 0;
+    font-size: 42.5px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-align: center;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_4KxzBW {
+    margin: 0;
+    font-size: 15.3px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_4KxzBW {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_4KxzBW:hover{
+    transition: all 0.3s ease 0s;
+    color: #000000;
+  }
+
+  .featured-collection-arrow-template--23813059936605__ss_featured_collection_4KxzBW {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffdd00;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+
+  .featured-collection-arrow-template--23813059936605__ss_featured_collection_4KxzBW svg {
+    width: 5px;
+    height: 8px;
+    transform: rotate(-90deg);
+  }
+
+  .featured-collection-arrow-template--23813059936605__ss_featured_collection_4KxzBW svg path {
+    transition: all 0.3s ease 0s;
+    color: #000000;
+    fill: #000000;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_4KxzBW:hover .featured-collection-arrow-template--23813059936605__ss_featured_collection_4KxzBW {
+    transition: all 0.3s ease 0s;
+    background-color: #000000;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_4KxzBW:hover .featured-collection-arrow-template--23813059936605__ss_featured_collection_4KxzBW svg path {
+    fill: white;
+  }
+
+  .featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW {
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+    padding-inline:6px;
+  }
+
+  .featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW .swiper-slide {
+    display: block;
+    height: auto;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box !important;
+  }
+
+  .featured-collection-items-template--23813059936605__ss_featured_collection_4KxzBW {
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+  }
+
+  .featured-collection-item-template--23813059936605__ss_featured_collection_4KxzBW {
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box !important;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW.has-secondary-template--23813059936605__ss_featured_collection_4KxzBW {
+    position: relative;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW.has-secondary-template--23813059936605__ss_featured_collection_4KxzBW .featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: none;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW img,
+  .featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW svg {
+    background-color: gray;
+  }
+
+  .featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW {
+    padding: 12px 3px;
+  }
+
+  .featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW {
+    margin: 0px;
+    font-size: 11.9px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW {
+    margin: 0px;
+    margin-top: 9px;
+    font-size: 13.6px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-decoration: none;
+    text-transform: unset;
+  }
+
+  .featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW span {
+    font-size: 12.6px;
+    font-weight: 400;
+    -webkit-text-decoration: line-through;
+    text-decoration: line-through;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW span,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW span {
+    color: #000000;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW:hover ,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW:hover {
+    transition: all 0.3s ease 0s;
+    border: 1px solid #c4c4c4;
+    background: #f2f2f2;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW:hover span,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW:hover span {
+    fill: #000000;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW.swiper-button-disabled,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW.swiper-button-disabled {
+    opacity: 0.3;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW {
+    left: 3%;
+  }
+
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW {
+    right: 3%;
+  }
+
+  .featured-collection-pagination-template--23813059936605__ss_featured_collection_4KxzBW {
+    position: static !important;
+    height: 3px;
+    
+      margin-top: 15px;
+    
+  }
+
+  .featured-collection-pagination-template--23813059936605__ss_featured_collection_4KxzBW.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #000000;
+  }
+
+  .featured-collection-pagination-template--23813059936605__ss_featured_collection_4KxzBW.hide {
+    display: none;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW .animate-icon,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW .animate-icon {
+    pointer-events: none;
+    place-items: center;
+    display: grid;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW .animate-icon:before,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW .animate-icon:before {
+    content: "";
+    grid-area: 1 / -1;
+    transition: all .2s ease-in-out;
+    width: 8.3px;
+    height: 8.3px;
+    transform: rotate(calc(1 * 45deg));
+    box-sizing: border-box;
+    border-style: solid;
+    border: 0px;
+    border-right: 2px solid currentColor;
+    border-top: 2px solid currentColor;
+    position: relative;
+    left: -1px;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW .animate-icon:before {
+    left: unset;
+    right: -1px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid currentColor;
+    border-left: 2px solid currentColor;
+  }
+
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW:hover .animate-icon:before {
+    transform: translate(calc(1 * 0.125rem)) rotate(calc(1 * 45deg));
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW:hover .animate-icon:before {
+    transform: translate(calc(-1 * 0.125rem)) rotate(calc(1 * 45deg));
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW .animate-icon:after,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW .animate-icon:after {
+    content: "";
+    grid-area: 1 / -1;
+    transition: all .2s ease-in-out;
+    width: 8px;
+    height: 1.6px;
+    transform-origin: center;
+    opacity: 0;
+    background: currentColor;
+    transform: scaleX(.5);
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW:hover .animate-icon:after,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW:hover .animate-icon:after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  @media(min-width: 1024px) {
+
+    .section-template--23813059936605__ss_featured_collection_4KxzBW {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .section-template--23813059936605__ss_featured_collection_4KxzBW-settings {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .featured-collection-wrapper-template--23813059936605__ss_featured_collection_4KxzBW h2 {
+      font-size: 40px;
+    }
+
+    .featured-collection-wrapper-template--23813059936605__ss_featured_collection_4KxzBW > p {
+      font-size: 50px;
+    }
+
+    .featured-collection-link-template--23813059936605__ss_featured_collection_4KxzBW {
+      font-size: 18px;
+    }
+
+    .featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW {
+      font-size: 14px;
+    }
+
+    .featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW {
+      margin-top: 12px;
+      font-size: 16px;
+    }
+
+    .featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW span {
+      font-size: 14px;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW {
+      margin-top: 40px;
+    }
+
+    .featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW {
+      padding: 16px 4px;
+    }
+
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW {
+      width: 50px;
+      height: 50px;
+    }
+
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW,
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW.swiper-button-disabled,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW.swiper-button-disabled {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW:hover .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW,
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW:hover .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW {
+      opacity: 1;
+      pointer-events: all;
+      transition: all 0.3s ease 0s;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW:hover .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW.swiper-button-disabled,
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW:hover .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW.swiper-button-disabled {
+      opacity: 0.3;
+    }
+
+     .featured-collection-pagination-template--23813059936605__ss_featured_collection_4KxzBW {
+      
+        margin-top: 15px;
+      
+    }
+
+  }</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    @media(min-width: 992px) {
+      .featured-collection-items-template--23813059936605__ss_featured_collection_4KxzBW {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+    }
+  </style>
+
+
+
+
+
+
+
+  <style>
+    @keyframes fade-in-template--23813059936605__ss_featured_collection_4KxzBW {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW .swiper-slide:hover .featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW {
+      display: block !important;
+      position: static !important;
+      -webkit-animation: fade-in-template--23813059936605__ss_featured_collection_4KxzBW 0.5s;
+      animation: fade-in-template--23813059936605__ss_featured_collection_4KxzBW 0.5s;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW .swiper-slide:hover .has-secondary-template--23813059936605__ss_featured_collection_4KxzBW .featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW {
+      display: none;
+    }
+
+    .featured-collection-item-template--23813059936605__ss_featured_collection_4KxzBW:hover .featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW {
+      display: block !important;
+      position: static !important;
+      -webkit-animation: fade-in-template--23813059936605__ss_featured_collection_4KxzBW 0.5s;
+      animation: fade-in-template--23813059936605__ss_featured_collection_4KxzBW 0.5s;
+    }
+
+    .featured-collection-item-template--23813059936605__ss_featured_collection_4KxzBW:hover .has-secondary-template--23813059936605__ss_featured_collection_4KxzBW .featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW {
+      display: none;
+    }
+  </style>
+
+
+
+  <style>
+    .featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW {
+      aspect-ratio: 1 / 1;
+    }
+  </style>
+
+
+
+
+
+  <style>
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW {
+      display: none;
+    }
+
+    @media(min-width: 1024px) {
+      .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW,
+      .featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW {
+        display: flex;
+      }
+    }
+  </style>
+
+
+
+  <style>
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW {
+      margin-left: -1.5rem !important;
+      margin-right: -1.5rem !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+
+    @media(min-width: 1024px) {
+      .featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+      }
+    }
+  </style>
+
+
+
+  <style>
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW {
+      margin-left: -1.5rem !important;
+      margin-right: -1.5rem !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+
+    @media(min-width: 1024px) {
+      .featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW {
+        margin-left: -5rem !important;
+        margin-right: -5rem !important;
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+      }
+    }
+  </style>
+
+
+<div class="section-template--23813059936605__ss_featured_collection_4KxzBW featured-collection-template--23813059936605__ss_featured_collection_4KxzBW" style="background-color:#ffffff; background-image: ;">
+    <div class="section-template--23813059936605__ss_featured_collection_4KxzBW-settings featured-collection-wrapper-template--23813059936605__ss_featured_collection_4KxzBW">
+
+        
+
+        
+          <div class="featured-collection-top-template--23813059936605__ss_featured_collection_4KxzBW">
+            <h2>SP5DER HOODIES🕷️</h2>
+            <a class="featured-collection-link-template--23813059936605__ss_featured_collection_4KxzBW" href="">
+              View all
+              <div class="featured-collection-arrow-template--23813059936605__ss_featured_collection_4KxzBW">
+                <svg class="featured-collection-arrow-template--23813059936605__ss_featured_collection_4KxzBW" aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z">
+                </svg>
+              </div>
+            </a>
+          </div>
+        
+
+        
+
+          
+
+        
+        
+          <div class="featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW" data-preview-mobile="1.3" data-preview-mobile-big="3" data-preview-desktop="5">
+            
+            <div class="swiper-wrapper">
+              
+              
+                
+                  <a href="/products/sp5der-i-heart-sp5-hoodie-black-copy" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW  has-secondary-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/Sp5der_PINK_Hoodie_Black_-_Prime_Reps_1.jpg?v=1735403520">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/Sp5der_PINK_Hoodie_Black_-_Prime_Reps_2.jpg?v=1735403547">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der PINK Hoodie Black</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $63.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-pink-v2-hoodie-pink-copy" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW  has-secondary-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/Sp5der_PINK_V2_Hoodie_Black_-_Prime_Reps_1.jpg?v=1735404731">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/Sp5der_PINK_V2_Hoodie_Black_-_Prime_Reps_2.jpg?v=1735404742">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der PINK V2 Hoodie Black</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $63.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-og-web-hoodie-black" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW  has-secondary-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/Sp5der_OG_Web_Hoodie_Black_-_Prime_Reps_1.jpg?v=1736180469">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/Sp5der_OG_Web_Hoodie_Black_-_Prime_Reps_2.jpg?v=1736180478">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der OG Web Hoodie Black</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $63.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-og-web-hoodie-black-copy" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW  has-secondary-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/Sp5der_Beluga_Hoodie_Heather_Grey_-_Prime_Reps_1.jpg?v=1735407040">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/Sp5der_Beluga_Hoodie_Heather_Grey_-_Prime_Reps_2.jpg?v=1735407053">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der Beluga Hoodie Heather Grey</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $61.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-web-hoodie-sky-blue" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW  has-secondary-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/Sp5der_Web_Hoodie_Sky_Blue_-_Prime_Reps_1.png?v=1735830181">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/Sp5der_Web_Hoodie_Sky_Blue_-_Prime_Reps22.jpg?v=1735830201">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der Web Hoodie Sky Blue</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $61.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-tc-hoodie-blue" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW  has-secondary-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/1._1_04a2d95e-e4bb-401d-86ba-0beeca865da6.jpg?v=1722220321">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/2._2_f3050870-6258-4a1c-b23e-a5972aae4288.jpg?v=1722220321">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der TC Hoodie Blue</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $65.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-web-hoodie-pink" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW  has-secondary-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/Sp5der_PINK_Hoodie_Pink_-_Prime_Reps.png?v=1735315587">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/Sp5der_PINK_Hoodie_Pink_-_Prime_Reps_2.jpg?v=1735315600">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der PINK Hoodie Pink</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $64.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-atlanta-hoodie-pink" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW  has-secondary-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/3._3_23737180-e589-4a7b-ac49-6be742e6dae3.jpg?v=1736192989">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/4._4_c41f1fdc-b927-4aa4-9549-fb5ac37d2764.jpg?v=1722218332">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der Atlanta Hoodie Pink</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $63.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-beluga-hoodie-gold-copy" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="" src="//shopprimereps.com/cdn/shop/files/1._1_d7e43a8f-0e82-40f7-9e0e-2271cc61de4f.jpg?v=1722217972">
+                      
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der Web Hoodie Brown</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $62.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-og-rhinestone-logo-hoodie-white-copy" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW  has-secondary-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/1_2024-07-29T02_12_12.714Z.png?v=1722219085">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/1._1_c5f5ec09-ba59-497f-aa04-315579276583.jpg?v=1722218789">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der OG Rhinestone Logo Hoodie Black</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $79.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-beluga-hoodie-navy-copy" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="" src="//shopprimereps.com/cdn/shop/files/1._1_63df84d5-42c4-47be-9a86-900ab891cdac.jpg?v=1722217330">
+                      
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der Atlanta Hoodie Navy</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $62.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-beluga-hoodie-orange-copy" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW  has-secondary-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/1_2024-07-29T02_25_56.443Z.png?v=1722219906">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/1._1_a01ca858-c619-4024-af1f-a750ffbe5556.jpg?v=1722219829">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der Wait Web Hoodie Slate Grey</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $72.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-atlanta-hoodie-pink-copy" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW  has-secondary-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/1_2024-07-29T02_05_38.992Z.png?v=1722218689">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/1._1_996ec603-3029-41a8-aa73-8a93a7eca07c.jpg?v=1722218574">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der OG Rhinestone Logo Hoodie White</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $70.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-ny-gray-copy" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="" src="//shopprimereps.com/cdn/shop/files/1._1_167dc66f-97c8-40ac-8241-0638e5914f76.jpg?v=1722217022">
+                      
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der Beluga Hoodie Red</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $62.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-wait-web-hoodie-slate-grey-copy" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW  has-secondary-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/1._1_1df9830e-51ce-4018-bbd7-ac7a0440bb19.jpg?v=1722220084">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/2._2_03d28336-99de-48cc-b168-fef5b4ba412a.jpg?v=1722220084">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Sp5der Acai Hoodie Purple Lowest Ask</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $64.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/sp5der-logo-hoodie-maroon-copy" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_4KxzBW  has-secondary-template--23813059936605__ss_featured_collection_4KxzBW ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/8._8_d1954df5-37d0-4e94-afc5-0dd5b8d54278.jpg?v=1722074116">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_4KxzBW" src="//shopprimereps.com/cdn/shop/files/7._7_18ab330f-8fa1-457a-960c-17e2c7e0170a.jpg?v=1722074116">
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_4KxzBW">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_4KxzBW">Tree OG Web Hoodie pants. Tree og web hoodie pants</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_4KxzBW">
+                        
+                          $89.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+              
+            </div>
+            <div class="featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW">
+              <span class="animate-icon"></span>
+            </div>
+            <div class="featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW">
+              <span class="animate-icon"></span>
+            </div>
+            
+              <div class="featured-collection-pagination-template--23813059936605__ss_featured_collection_4KxzBW  swiper-pagination"></div>
+            
+          </div>
+        
+
+        
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+<script>
+  function initFeaturedCollection() {
+    let item = document.querySelector('.featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW');
+    let perMobile = item.getAttribute('data-preview-mobile');
+    let perMobileBig = item.getAttribute('data-preview-mobile-big');
+    let perDesktop = item.getAttribute('data-preview-desktop');
+    const slider = new Swiper('.featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW', {
+      speed: 300,
+      spaceBetween: 20,
+      slidesPerView: 2,
+      navigation: {
+        nextEl: '.featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW',
+        prevEl: '.featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW'
+      },
+      pagination: {
+        el: '.featured-collection-pagination-template--23813059936605__ss_featured_collection_4KxzBW',
+        type: 'progressbar'
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: perMobile,
+        },
+        768: {
+          slidesPerView: perMobileBig,
+        },
+        1024: {
+          slidesPerView: perDesktop,
+        }
+      }
+    })
+  }
+  initFeaturedCollection();
+  document.addEventListener('DOMContentLoaded', initFeaturedCollection);
+  if (Shopify.designMode) {
+     document.addEventListener('DOMContentLoaded', initFeaturedCollection);
+     document.addEventListener('shopify:section:select', initFeaturedCollection);
+     document.addEventListener('shopify:section:deselect', initFeaturedCollection);
+     document.addEventListener('shopify:inspector:activate', initFeaturedCollection);
+     document.addEventListener('shopify:section:unload', initFeaturedCollection);
+     document.addEventListener('shopify:section:load', initFeaturedCollection);
+     document.addEventListener('shopify:section:settings:change', initFeaturedCollection);
+  }
+
+</script>
+
+
+</div><div id="shopify-section-template--23813059936605__ss_featured_collection_hqWLmQ" class="shopify-section"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/><style data-shopify>@font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.bcd3d09dcb631dec5544b8fb7b154ff234a44630.woff2?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=16017b6f0ab3e23804ba46a95e934b9ecb71b31bfc6b01b8919e4fa15d73a239") format("woff2"),
+       url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.a2d012304becc2a26f1ded1acc136fcab85c9afd.woff?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=0ea943b25f0646b4f098cc0117c13f5d7b17a9c104fab854bcc440bf9054fc85") format("woff");
+}
+
+  @font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.bcd3d09dcb631dec5544b8fb7b154ff234a44630.woff2?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=16017b6f0ab3e23804ba46a95e934b9ecb71b31bfc6b01b8919e4fa15d73a239") format("woff2"),
+       url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.a2d012304becc2a26f1ded1acc136fcab85c9afd.woff?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=0ea943b25f0646b4f098cc0117c13f5d7b17a9c104fab854bcc440bf9054fc85") format("woff");
+}
+
+  @font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.bcd3d09dcb631dec5544b8fb7b154ff234a44630.woff2?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=16017b6f0ab3e23804ba46a95e934b9ecb71b31bfc6b01b8919e4fa15d73a239") format("woff2"),
+       url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.a2d012304becc2a26f1ded1acc136fcab85c9afd.woff?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=0ea943b25f0646b4f098cc0117c13f5d7b17a9c104fab854bcc440bf9054fc85") format("woff");
+}
+
+  
+  
+
+  .section-template--23813059936605__ss_featured_collection_hqWLmQ {
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+
+  .section-template--23813059936605__ss_featured_collection_hqWLmQ-settings {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .featured-collection-top-template--23813059936605__ss_featured_collection_hqWLmQ h2 {
+    margin: 0;
+    font-size: 34.0px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-align: left;
+  }
+
+  .featured-collection-wrapper-template--23813059936605__ss_featured_collection_hqWLmQ > p {
+    margin: 0;
+    font-size: 42.5px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-align: center;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_hqWLmQ {
+    margin: 0;
+    font-size: 15.3px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_hqWLmQ {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_hqWLmQ:hover{
+    transition: all 0.3s ease 0s;
+    color: #000000;
+  }
+
+  .featured-collection-arrow-template--23813059936605__ss_featured_collection_hqWLmQ {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffdd00;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+
+  .featured-collection-arrow-template--23813059936605__ss_featured_collection_hqWLmQ svg {
+    width: 5px;
+    height: 8px;
+    transform: rotate(-90deg);
+  }
+
+  .featured-collection-arrow-template--23813059936605__ss_featured_collection_hqWLmQ svg path {
+    transition: all 0.3s ease 0s;
+    color: #000000;
+    fill: #000000;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_hqWLmQ:hover .featured-collection-arrow-template--23813059936605__ss_featured_collection_hqWLmQ {
+    transition: all 0.3s ease 0s;
+    background-color: #000000;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_hqWLmQ:hover .featured-collection-arrow-template--23813059936605__ss_featured_collection_hqWLmQ svg path {
+    fill: white;
+  }
+
+  .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ {
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+    padding-inline:6px;
+  }
+
+  .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ .swiper-slide {
+    display: block;
+    height: auto;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box !important;
+  }
+
+  .featured-collection-items-template--23813059936605__ss_featured_collection_hqWLmQ {
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+  }
+
+  .featured-collection-item-template--23813059936605__ss_featured_collection_hqWLmQ {
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box !important;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ.has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ {
+    position: relative;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ.has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ .featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: none;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ img,
+  .featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ svg {
+    background-color: gray;
+  }
+
+  .featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ {
+    padding: 12px 3px;
+  }
+
+  .featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ {
+    margin: 0px;
+    font-size: 11.9px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ {
+    margin: 0px;
+    margin-top: 9px;
+    font-size: 13.6px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-decoration: none;
+    text-transform: unset;
+  }
+
+  .featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ span {
+    font-size: 12.6px;
+    font-weight: 400;
+    -webkit-text-decoration: line-through;
+    text-decoration: line-through;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ span,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ span {
+    color: #000000;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ:hover ,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ:hover {
+    transition: all 0.3s ease 0s;
+    border: 1px solid #c4c4c4;
+    background: #f2f2f2;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ:hover span,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ:hover span {
+    fill: #000000;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ.swiper-button-disabled,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ.swiper-button-disabled {
+    opacity: 0.3;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ {
+    left: 3%;
+  }
+
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ {
+    right: 3%;
+  }
+
+  .featured-collection-pagination-template--23813059936605__ss_featured_collection_hqWLmQ {
+    position: static !important;
+    height: 3px;
+    
+      margin-top: 15px;
+    
+  }
+
+  .featured-collection-pagination-template--23813059936605__ss_featured_collection_hqWLmQ.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #000000;
+  }
+
+  .featured-collection-pagination-template--23813059936605__ss_featured_collection_hqWLmQ.hide {
+    display: none;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ .animate-icon,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ .animate-icon {
+    pointer-events: none;
+    place-items: center;
+    display: grid;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ .animate-icon:before,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ .animate-icon:before {
+    content: "";
+    grid-area: 1 / -1;
+    transition: all .2s ease-in-out;
+    width: 8.3px;
+    height: 8.3px;
+    transform: rotate(calc(1 * 45deg));
+    box-sizing: border-box;
+    border-style: solid;
+    border: 0px;
+    border-right: 2px solid currentColor;
+    border-top: 2px solid currentColor;
+    position: relative;
+    left: -1px;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ .animate-icon:before {
+    left: unset;
+    right: -1px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid currentColor;
+    border-left: 2px solid currentColor;
+  }
+
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ:hover .animate-icon:before {
+    transform: translate(calc(1 * 0.125rem)) rotate(calc(1 * 45deg));
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ:hover .animate-icon:before {
+    transform: translate(calc(-1 * 0.125rem)) rotate(calc(1 * 45deg));
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ .animate-icon:after,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ .animate-icon:after {
+    content: "";
+    grid-area: 1 / -1;
+    transition: all .2s ease-in-out;
+    width: 8px;
+    height: 1.6px;
+    transform-origin: center;
+    opacity: 0;
+    background: currentColor;
+    transform: scaleX(.5);
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ:hover .animate-icon:after,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ:hover .animate-icon:after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  @media(min-width: 1024px) {
+
+    .section-template--23813059936605__ss_featured_collection_hqWLmQ {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .section-template--23813059936605__ss_featured_collection_hqWLmQ-settings {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .featured-collection-wrapper-template--23813059936605__ss_featured_collection_hqWLmQ h2 {
+      font-size: 40px;
+    }
+
+    .featured-collection-wrapper-template--23813059936605__ss_featured_collection_hqWLmQ > p {
+      font-size: 50px;
+    }
+
+    .featured-collection-link-template--23813059936605__ss_featured_collection_hqWLmQ {
+      font-size: 18px;
+    }
+
+    .featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ {
+      font-size: 14px;
+    }
+
+    .featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ {
+      margin-top: 12px;
+      font-size: 16px;
+    }
+
+    .featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ span {
+      font-size: 14px;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ {
+      margin-top: 40px;
+    }
+
+    .featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ {
+      padding: 16px 4px;
+    }
+
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ {
+      width: 50px;
+      height: 50px;
+    }
+
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ,
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ.swiper-button-disabled,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ.swiper-button-disabled {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ:hover .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ,
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ:hover .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ {
+      opacity: 1;
+      pointer-events: all;
+      transition: all 0.3s ease 0s;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ:hover .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ.swiper-button-disabled,
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ:hover .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ.swiper-button-disabled {
+      opacity: 0.3;
+    }
+
+     .featured-collection-pagination-template--23813059936605__ss_featured_collection_hqWLmQ {
+      
+        margin-top: 15px;
+      
+    }
+
+  }</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    @media(min-width: 992px) {
+      .featured-collection-items-template--23813059936605__ss_featured_collection_hqWLmQ {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+    }
+  </style>
+
+
+
+
+
+
+
+  <style>
+    @keyframes fade-in-template--23813059936605__ss_featured_collection_hqWLmQ {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ .swiper-slide:hover .featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ {
+      display: block !important;
+      position: static !important;
+      -webkit-animation: fade-in-template--23813059936605__ss_featured_collection_hqWLmQ 0.5s;
+      animation: fade-in-template--23813059936605__ss_featured_collection_hqWLmQ 0.5s;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ .swiper-slide:hover .has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ .featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ {
+      display: none;
+    }
+
+    .featured-collection-item-template--23813059936605__ss_featured_collection_hqWLmQ:hover .featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ {
+      display: block !important;
+      position: static !important;
+      -webkit-animation: fade-in-template--23813059936605__ss_featured_collection_hqWLmQ 0.5s;
+      animation: fade-in-template--23813059936605__ss_featured_collection_hqWLmQ 0.5s;
+    }
+
+    .featured-collection-item-template--23813059936605__ss_featured_collection_hqWLmQ:hover .has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ .featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ {
+      display: none;
+    }
+  </style>
+
+
+
+  <style>
+    .featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ {
+      aspect-ratio: 1 / 1;
+    }
+  </style>
+
+
+
+
+
+  <style>
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ {
+      display: none;
+    }
+
+    @media(min-width: 1024px) {
+      .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ,
+      .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ {
+        display: flex;
+      }
+    }
+  </style>
+
+
+
+  <style>
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ {
+      margin-left: -1.5rem !important;
+      margin-right: -1.5rem !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+
+    @media(min-width: 1024px) {
+      .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+      }
+    }
+  </style>
+
+
+
+  <style>
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ {
+      margin-left: -1.5rem !important;
+      margin-right: -1.5rem !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+
+    @media(min-width: 1024px) {
+      .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ {
+        margin-left: -5rem !important;
+        margin-right: -5rem !important;
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+      }
+    }
+  </style>
