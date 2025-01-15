@@ -1,0 +1,1915 @@
+<script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+<script>
+  function initFeaturedCollection() {
+    let item = document.querySelector('.featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW');
+    let perMobile = item.getAttribute('data-preview-mobile');
+    let perMobileBig = item.getAttribute('data-preview-mobile-big');
+    let perDesktop = item.getAttribute('data-preview-desktop');
+    const slider = new Swiper('.featured-collection-slider-template--23813059936605__ss_featured_collection_4KxzBW', {
+      speed: 300,
+      spaceBetween: 20,
+      slidesPerView: 2,
+      navigation: {
+        nextEl: '.featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW',
+        prevEl: '.featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW'
+      },
+      pagination: {
+        el: '.featured-collection-pagination-template--23813059936605__ss_featured_collection_4KxzBW',
+        type: 'progressbar'
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: perMobile,
+        },
+        768: {
+          slidesPerView: perMobileBig,
+        },
+        1024: {
+          slidesPerView: perDesktop,
+        }
+      }
+    })
+  }
+  initFeaturedCollection();
+  document.addEventListener('DOMContentLoaded', initFeaturedCollection);
+  if (Shopify.designMode) {
+     document.addEventListener('DOMContentLoaded', initFeaturedCollection);
+     document.addEventListener('shopify:section:select', initFeaturedCollection);
+     document.addEventListener('shopify:section:deselect', initFeaturedCollection);
+     document.addEventListener('shopify:inspector:activate', initFeaturedCollection);
+     document.addEventListener('shopify:section:unload', initFeaturedCollection);
+     document.addEventListener('shopify:section:load', initFeaturedCollection);
+     document.addEventListener('shopify:section:settings:change', initFeaturedCollection);
+  }
+
+</script>
+
+
+</div><div id="shopify-section-template--23813059936605__ss_featured_collection_hqWLmQ" class="shopify-section"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/><style data-shopify>@font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.bcd3d09dcb631dec5544b8fb7b154ff234a44630.woff2?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=16017b6f0ab3e23804ba46a95e934b9ecb71b31bfc6b01b8919e4fa15d73a239") format("woff2"),
+       url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.a2d012304becc2a26f1ded1acc136fcab85c9afd.woff?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=0ea943b25f0646b4f098cc0117c13f5d7b17a9c104fab854bcc440bf9054fc85") format("woff");
+}
+
+  @font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.bcd3d09dcb631dec5544b8fb7b154ff234a44630.woff2?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=16017b6f0ab3e23804ba46a95e934b9ecb71b31bfc6b01b8919e4fa15d73a239") format("woff2"),
+       url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.a2d012304becc2a26f1ded1acc136fcab85c9afd.woff?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=0ea943b25f0646b4f098cc0117c13f5d7b17a9c104fab854bcc440bf9054fc85") format("woff");
+}
+
+  @font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.bcd3d09dcb631dec5544b8fb7b154ff234a44630.woff2?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=16017b6f0ab3e23804ba46a95e934b9ecb71b31bfc6b01b8919e4fa15d73a239") format("woff2"),
+       url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.a2d012304becc2a26f1ded1acc136fcab85c9afd.woff?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=0ea943b25f0646b4f098cc0117c13f5d7b17a9c104fab854bcc440bf9054fc85") format("woff");
+}
+
+  
+  
+
+  .section-template--23813059936605__ss_featured_collection_hqWLmQ {
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+
+  .section-template--23813059936605__ss_featured_collection_hqWLmQ-settings {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .featured-collection-top-template--23813059936605__ss_featured_collection_hqWLmQ h2 {
+    margin: 0;
+    font-size: 34.0px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-align: left;
+  }
+
+  .featured-collection-wrapper-template--23813059936605__ss_featured_collection_hqWLmQ > p {
+    margin: 0;
+    font-size: 42.5px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-align: center;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_hqWLmQ {
+    margin: 0;
+    font-size: 15.3px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_hqWLmQ {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_hqWLmQ:hover{
+    transition: all 0.3s ease 0s;
+    color: #000000;
+  }
+
+  .featured-collection-arrow-template--23813059936605__ss_featured_collection_hqWLmQ {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffdd00;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+
+  .featured-collection-arrow-template--23813059936605__ss_featured_collection_hqWLmQ svg {
+    width: 5px;
+    height: 8px;
+    transform: rotate(-90deg);
+  }
+
+  .featured-collection-arrow-template--23813059936605__ss_featured_collection_hqWLmQ svg path {
+    transition: all 0.3s ease 0s;
+    color: #000000;
+    fill: #000000;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_hqWLmQ:hover .featured-collection-arrow-template--23813059936605__ss_featured_collection_hqWLmQ {
+    transition: all 0.3s ease 0s;
+    background-color: #000000;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_hqWLmQ:hover .featured-collection-arrow-template--23813059936605__ss_featured_collection_hqWLmQ svg path {
+    fill: white;
+  }
+
+  .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ {
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+    padding-inline:6px;
+  }
+
+  .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ .swiper-slide {
+    display: block;
+    height: auto;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box !important;
+  }
+
+  .featured-collection-items-template--23813059936605__ss_featured_collection_hqWLmQ {
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+  }
+
+  .featured-collection-item-template--23813059936605__ss_featured_collection_hqWLmQ {
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box !important;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ.has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ {
+    position: relative;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ.has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ .featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: none;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ img,
+  .featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ svg {
+    background-color: gray;
+  }
+
+  .featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ {
+    padding: 12px 3px;
+  }
+
+  .featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ {
+    margin: 0px;
+    font-size: 11.9px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ {
+    margin: 0px;
+    margin-top: 9px;
+    font-size: 13.6px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-decoration: none;
+    text-transform: unset;
+  }
+
+  .featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ span {
+    font-size: 12.6px;
+    font-weight: 400;
+    -webkit-text-decoration: line-through;
+    text-decoration: line-through;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ span,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ span {
+    color: #000000;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ:hover ,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ:hover {
+    transition: all 0.3s ease 0s;
+    border: 1px solid #c4c4c4;
+    background: #f2f2f2;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ:hover span,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ:hover span {
+    fill: #000000;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ.swiper-button-disabled,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ.swiper-button-disabled {
+    opacity: 0.3;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ {
+    left: 3%;
+  }
+
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ {
+    right: 3%;
+  }
+
+  .featured-collection-pagination-template--23813059936605__ss_featured_collection_hqWLmQ {
+    position: static !important;
+    height: 3px;
+    
+      margin-top: 15px;
+    
+  }
+
+  .featured-collection-pagination-template--23813059936605__ss_featured_collection_hqWLmQ.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #000000;
+  }
+
+  .featured-collection-pagination-template--23813059936605__ss_featured_collection_hqWLmQ.hide {
+    display: none;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ .animate-icon,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ .animate-icon {
+    pointer-events: none;
+    place-items: center;
+    display: grid;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ .animate-icon:before,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ .animate-icon:before {
+    content: "";
+    grid-area: 1 / -1;
+    transition: all .2s ease-in-out;
+    width: 8.3px;
+    height: 8.3px;
+    transform: rotate(calc(1 * 45deg));
+    box-sizing: border-box;
+    border-style: solid;
+    border: 0px;
+    border-right: 2px solid currentColor;
+    border-top: 2px solid currentColor;
+    position: relative;
+    left: -1px;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ .animate-icon:before {
+    left: unset;
+    right: -1px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid currentColor;
+    border-left: 2px solid currentColor;
+  }
+
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ:hover .animate-icon:before {
+    transform: translate(calc(1 * 0.125rem)) rotate(calc(1 * 45deg));
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ:hover .animate-icon:before {
+    transform: translate(calc(-1 * 0.125rem)) rotate(calc(1 * 45deg));
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ .animate-icon:after,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ .animate-icon:after {
+    content: "";
+    grid-area: 1 / -1;
+    transition: all .2s ease-in-out;
+    width: 8px;
+    height: 1.6px;
+    transform-origin: center;
+    opacity: 0;
+    background: currentColor;
+    transform: scaleX(.5);
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ:hover .animate-icon:after,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ:hover .animate-icon:after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  @media(min-width: 1024px) {
+
+    .section-template--23813059936605__ss_featured_collection_hqWLmQ {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .section-template--23813059936605__ss_featured_collection_hqWLmQ-settings {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .featured-collection-wrapper-template--23813059936605__ss_featured_collection_hqWLmQ h2 {
+      font-size: 40px;
+    }
+
+    .featured-collection-wrapper-template--23813059936605__ss_featured_collection_hqWLmQ > p {
+      font-size: 50px;
+    }
+
+    .featured-collection-link-template--23813059936605__ss_featured_collection_hqWLmQ {
+      font-size: 18px;
+    }
+
+    .featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ {
+      font-size: 14px;
+    }
+
+    .featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ {
+      margin-top: 12px;
+      font-size: 16px;
+    }
+
+    .featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ span {
+      font-size: 14px;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ {
+      margin-top: 40px;
+    }
+
+    .featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ {
+      padding: 16px 4px;
+    }
+
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ {
+      width: 50px;
+      height: 50px;
+    }
+
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ,
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ.swiper-button-disabled,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ.swiper-button-disabled {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ:hover .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ,
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ:hover .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ {
+      opacity: 1;
+      pointer-events: all;
+      transition: all 0.3s ease 0s;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ:hover .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ.swiper-button-disabled,
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ:hover .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ.swiper-button-disabled {
+      opacity: 0.3;
+    }
+
+     .featured-collection-pagination-template--23813059936605__ss_featured_collection_hqWLmQ {
+      
+        margin-top: 15px;
+      
+    }
+
+  }</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    @media(min-width: 992px) {
+      .featured-collection-items-template--23813059936605__ss_featured_collection_hqWLmQ {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+    }
+  </style>
+
+
+
+
+
+
+
+  <style>
+    @keyframes fade-in-template--23813059936605__ss_featured_collection_hqWLmQ {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ .swiper-slide:hover .featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ {
+      display: block !important;
+      position: static !important;
+      -webkit-animation: fade-in-template--23813059936605__ss_featured_collection_hqWLmQ 0.5s;
+      animation: fade-in-template--23813059936605__ss_featured_collection_hqWLmQ 0.5s;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ .swiper-slide:hover .has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ .featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ {
+      display: none;
+    }
+
+    .featured-collection-item-template--23813059936605__ss_featured_collection_hqWLmQ:hover .featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ {
+      display: block !important;
+      position: static !important;
+      -webkit-animation: fade-in-template--23813059936605__ss_featured_collection_hqWLmQ 0.5s;
+      animation: fade-in-template--23813059936605__ss_featured_collection_hqWLmQ 0.5s;
+    }
+
+    .featured-collection-item-template--23813059936605__ss_featured_collection_hqWLmQ:hover .has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ .featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ {
+      display: none;
+    }
+  </style>
+
+
+
+  <style>
+    .featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ {
+      aspect-ratio: 1 / 1;
+    }
+  </style>
+
+
+
+
+
+  <style>
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ {
+      display: none;
+    }
+
+    @media(min-width: 1024px) {
+      .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ,
+      .featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ {
+        display: flex;
+      }
+    }
+  </style>
+
+
+
+  <style>
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ {
+      margin-left: -1.5rem !important;
+      margin-right: -1.5rem !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+
+    @media(min-width: 1024px) {
+      .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+      }
+    }
+  </style>
+
+
+
+  <style>
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ {
+      margin-left: -1.5rem !important;
+      margin-right: -1.5rem !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+
+    @media(min-width: 1024px) {
+      .featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ {
+        margin-left: -5rem !important;
+        margin-right: -5rem !important;
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+      }
+    }
+  </style>
+
+
+<div class="section-template--23813059936605__ss_featured_collection_hqWLmQ featured-collection-template--23813059936605__ss_featured_collection_hqWLmQ" style="background-color:#ffffff; background-image: ;">
+    <div class="section-template--23813059936605__ss_featured_collection_hqWLmQ-settings featured-collection-wrapper-template--23813059936605__ss_featured_collection_hqWLmQ">
+
+        
+
+        
+          <div class="featured-collection-top-template--23813059936605__ss_featured_collection_hqWLmQ">
+            <h2>DENIM TEARS CLOTHING</h2>
+            <a class="featured-collection-link-template--23813059936605__ss_featured_collection_hqWLmQ" href="">
+              View all
+              <div class="featured-collection-arrow-template--23813059936605__ss_featured_collection_hqWLmQ">
+                <svg class="featured-collection-arrow-template--23813059936605__ss_featured_collection_hqWLmQ" aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z">
+                </svg>
+              </div>
+            </a>
+          </div>
+        
+
+        
+
+          
+
+        
+        
+          <div class="featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ" data-preview-mobile="1.3" data-preview-mobile-big="3" data-preview-desktop="5">
+            
+            <div class="swiper-wrapper">
+              
+              
+                
+                  <a href="/products/denim-tears-cotton-wreath-hoodie-grey" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_HOODIE_GREY_-_Prime_Reps_1.jpg?v=1735386667">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_HOODIE_GREY_-_Prime_Reps_2.jpg?v=1735386677">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS COTTON WREATH HOODIE GREY</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $69.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-cotton-wreath-hoodie-black" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_COTTON_WREATH_HOODIE_BLACK_-_Prime_Reps_1.jpg?v=1735765395">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_COTTON_WREATH_HOODIE_BLACK_-_Prime_Reps.jpg?v=1735765405">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS COTTON WREATH HOODIE BLACK</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $69.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-x-offset-jeans-light-wash" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_OFFSET_JEANS_LIGHT_WASH_-_Prime_Reps_1.jpg?v=1735987214">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_OFFSET_JEANS_LIGHT_WASH_-_Prime_Reps_2.jpg?v=1735987231">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS x OFFSET JEANS LIGHT WASH</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $74.99
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-x-offset-wreath-sweatpants-black" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_OFFSET_WREATH_SWEATPANTS_BLACK_-_Prime_Reps_1.jpg?v=1735988849">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_OFFSET_WREATH_SWEATPANTS_BLACK_-_Prime_Reps_2.jpg?v=1735988860">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS x OFFSET WREATH SWEATPANTS BLACK</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $69.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-cotton-wreath-hoodie-green" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_HOODIE_GREEN_-_Prime_Reps_1.jpg?v=1735763042">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_HOODIE_GREEN_-_Prime_Reps_2.jpg?v=1735763051">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS COTTON WREATH HOODIE GREEN</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $69.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-cotton-wreath-sweatpants-monochrome-black" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_COTTON_WREATH_SWEATPANTS_MONOCHROME_BLACK_-_Prime_Reps.jpg?v=1735938131">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_COTTON_WREATH_SWEATPANTS_MONOCHROME_BLACK_-_Prime_Reps_22.jpg?v=1735938144">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS COTTON WREATH SWEATPANTS MONOCHROME BLACK</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $69.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-cotton-wreath-hoodie-red" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_HOODIE_RED_-_Prime_Reps_1.jpg?v=1735763398">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_HOODIE_RED_-_Prime_Reps_2.jpg?v=1735763408">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS COTTON WREATH HOODIE RED</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $69.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-cotton-wreath-sweatpants-grey" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_COTTON_WREATH_SWEATPANTS_GREY_-_Prime_Reps_1.jpg?v=1735820396">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_COTTON_WREATH_SWEATPANTS_GREY_-_Prime_Reps_2.jpg?v=1735820429">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS COTTON WREATH SWEATPANTS GREY</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $69.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-x-levis-cotton-wreath-jeans-black" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_LEVI_S_COTTON_WREATH_JEANS_BLACK_-_Prime_Reps_1.jpg?v=1735933581">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_LEVI_S_COTTON_WREATH_JEANS_BLACK_-_Prime_Reps_2.jpg?v=1735933581">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS x LEVI'S COTTON WREATH JEANS BLACK</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $74.99
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-cotton-wreath-hoodie-monochrome-black" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_COTTON_WREATH_HOODIE_MONOCHROME_BLACK_-_Prime_Reps_111.jpg?v=1735938605">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/42fbe42c_4b0632da-9f9e-4342-9d2a-49ca5e548645.jpg?v=1735938576">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS COTTON WREATH HOODIE MONOCHROME BLACK</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $69.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-x-offset-wreath-hoodie-black" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_OFFSET_WREATH_HOODIE_BLACK_-_Prime_Reps_1.jpg?v=1735988356">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_OFFSET_WREATH_HOODIE_BLACK_-_Prime_Reps_2.jpg?v=1735988368">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS x OFFSET WREATH HOODIE BLACK</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $69.00
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-x-offset-jeans-black" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_OFFSET_JEANS_BLACK_-_Prime_Reps_1.jpg?v=1735987601">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_OFFSET_JEANS_BLACK_-_Prime_Reps_2.jpg?v=1735987613">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS x OFFSET JEANS BLACK</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $74.99
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-x-levis-cotton-wreath-jeans-blue" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_LEVI_S_COTTON_WREATH_JEANS_BLUE_-_Prime_Reps_1.jpg?v=1735937670">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_LEVI_S_COTTON_WREATH_JEANS_BLUE_-_Prime_Reps_2.jpg?v=1735937683">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS x LEVI'S COTTON WREATH JEANS BLUE</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $74.99
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-x-levis-dirty-wash-wreath-jeans-light-wash" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_LEVI_S_DIRTY_WASH_WREATH_JEANS_LIGHT_WASH_-_Prime_Reps_1.jpg?v=1735937182">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_LEVI_S_DIRTY_WASH_WREATH_JEANS_LIGHT_WASH_3.jpg?v=1735937200">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS x LEVI'S DIRTY WASH WREATH JEANS LIGHT WASH</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $74.99
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-x-levis-cotton-wreath-jeans-white" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_LEVI_S_COTTON_WREATH_JEANS_WHITE_-_Prime_Reps_1.jpg?v=1735935356">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_LEVI_S_COTTON_WREATH_JEANS_WHITE_-_Prime_Reps_2.jpg?v=1735935368">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS x LEVI'S COTTON WREATH JEANS WHITE</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $74.99
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+                  <a href="/products/denim-tears-levis-cotton-wreath-jeans-dark-blue" class="swiper-slide">
+                    <div class="featured-collection-image-template--23813059936605__ss_featured_collection_hqWLmQ  has-secondary-template--23813059936605__ss_featured_collection_hqWLmQ ">
+                      
+                        <img class="featured-collection-first-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_LEVI_S_COTTON_WREATH_JEANS_DARK_BLUE_-_Prime_Reps_1.jpg?v=1735935767">
+                      
+                      
+                        
+                          
+                        
+                          
+                            <img class="featured-collection-second-image-template--23813059936605__ss_featured_collection_hqWLmQ" src="//shopprimereps.com/cdn/shop/files/DENIM_TEARS_x_LEVI_S_COTTON_WREATH_JEANS_DARK_BLUE_-_Prime_Reps_2.jpg?v=1735935781">
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                      
+                    </div>
+                    <div class="featured-collection-content-template--23813059936605__ss_featured_collection_hqWLmQ">
+                      <p class="featured-collection-title-template--23813059936605__ss_featured_collection_hqWLmQ">DENIM TEARS x LEVI'S COTTON WREATH JEANS DARK BLUE</p>
+                      <p class="featured-collection-price-template--23813059936605__ss_featured_collection_hqWLmQ">
+                        
+                          $74.99
+                        
+                      </p>
+                    </div>
+                  </a>
+                
+              
+            </div>
+            <div class="featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ">
+              <span class="animate-icon"></span>
+            </div>
+            <div class="featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ">
+              <span class="animate-icon"></span>
+            </div>
+            
+              <div class="featured-collection-pagination-template--23813059936605__ss_featured_collection_hqWLmQ  swiper-pagination"></div>
+            
+          </div>
+        
+
+        
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+<script>
+  function initFeaturedCollection() {
+    let item = document.querySelector('.featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ');
+    let perMobile = item.getAttribute('data-preview-mobile');
+    let perMobileBig = item.getAttribute('data-preview-mobile-big');
+    let perDesktop = item.getAttribute('data-preview-desktop');
+    const slider = new Swiper('.featured-collection-slider-template--23813059936605__ss_featured_collection_hqWLmQ', {
+      speed: 300,
+      spaceBetween: 20,
+      slidesPerView: 2,
+      navigation: {
+        nextEl: '.featured-collection-btn-next-template--23813059936605__ss_featured_collection_hqWLmQ',
+        prevEl: '.featured-collection-btn-prev-template--23813059936605__ss_featured_collection_hqWLmQ'
+      },
+      pagination: {
+        el: '.featured-collection-pagination-template--23813059936605__ss_featured_collection_hqWLmQ',
+        type: 'progressbar'
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: perMobile,
+        },
+        768: {
+          slidesPerView: perMobileBig,
+        },
+        1024: {
+          slidesPerView: perDesktop,
+        }
+      }
+    })
+  }
+  initFeaturedCollection();
+  document.addEventListener('DOMContentLoaded', initFeaturedCollection);
+  if (Shopify.designMode) {
+     document.addEventListener('DOMContentLoaded', initFeaturedCollection);
+     document.addEventListener('shopify:section:select', initFeaturedCollection);
+     document.addEventListener('shopify:section:deselect', initFeaturedCollection);
+     document.addEventListener('shopify:inspector:activate', initFeaturedCollection);
+     document.addEventListener('shopify:section:unload', initFeaturedCollection);
+     document.addEventListener('shopify:section:load', initFeaturedCollection);
+     document.addEventListener('shopify:section:settings:change', initFeaturedCollection);
+  }
+
+</script>
+
+
+</div><div id="shopify-section-template--23813059936605__ss_featured_collection_xxRxtX" class="shopify-section"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/><style data-shopify>@font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.bcd3d09dcb631dec5544b8fb7b154ff234a44630.woff2?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=16017b6f0ab3e23804ba46a95e934b9ecb71b31bfc6b01b8919e4fa15d73a239") format("woff2"),
+       url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.a2d012304becc2a26f1ded1acc136fcab85c9afd.woff?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=0ea943b25f0646b4f098cc0117c13f5d7b17a9c104fab854bcc440bf9054fc85") format("woff");
+}
+
+  @font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.bcd3d09dcb631dec5544b8fb7b154ff234a44630.woff2?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=16017b6f0ab3e23804ba46a95e934b9ecb71b31bfc6b01b8919e4fa15d73a239") format("woff2"),
+       url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.a2d012304becc2a26f1ded1acc136fcab85c9afd.woff?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=0ea943b25f0646b4f098cc0117c13f5d7b17a9c104fab854bcc440bf9054fc85") format("woff");
+}
+
+  @font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.bcd3d09dcb631dec5544b8fb7b154ff234a44630.woff2?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=16017b6f0ab3e23804ba46a95e934b9ecb71b31bfc6b01b8919e4fa15d73a239") format("woff2"),
+       url("//shopprimereps.com/cdn/fonts/assistant/assistant_n4.a2d012304becc2a26f1ded1acc136fcab85c9afd.woff?h1=cHJpbWUtcmVwcy5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=c2hvcHByaW1lcmVwcy5jb20&hmac=0ea943b25f0646b4f098cc0117c13f5d7b17a9c104fab854bcc440bf9054fc85") format("woff");
+}
+
+  
+  
+
+  .section-template--23813059936605__ss_featured_collection_xxRxtX {
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+
+  .section-template--23813059936605__ss_featured_collection_xxRxtX-settings {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .featured-collection-top-template--23813059936605__ss_featured_collection_xxRxtX h2 {
+    margin: 0;
+    font-size: 34.0px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-align: left;
+  }
+
+  .featured-collection-wrapper-template--23813059936605__ss_featured_collection_xxRxtX > p {
+    margin: 0;
+    font-size: 42.5px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-align: center;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_xxRxtX {
+    margin: 0;
+    font-size: 15.3px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_xxRxtX {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_xxRxtX:hover{
+    transition: all 0.3s ease 0s;
+    color: #000000;
+  }
+
+  .featured-collection-arrow-template--23813059936605__ss_featured_collection_xxRxtX {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffdd00;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+
+  .featured-collection-arrow-template--23813059936605__ss_featured_collection_xxRxtX svg {
+    width: 5px;
+    height: 8px;
+    transform: rotate(-90deg);
+  }
+
+  .featured-collection-arrow-template--23813059936605__ss_featured_collection_xxRxtX svg path {
+    transition: all 0.3s ease 0s;
+    color: #000000;
+    fill: #000000;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_xxRxtX:hover .featured-collection-arrow-template--23813059936605__ss_featured_collection_xxRxtX {
+    transition: all 0.3s ease 0s;
+    background-color: #000000;
+  }
+
+  .featured-collection-link-template--23813059936605__ss_featured_collection_xxRxtX:hover .featured-collection-arrow-template--23813059936605__ss_featured_collection_xxRxtX svg path {
+    fill: white;
+  }
+
+  .featured-collection-slider-template--23813059936605__ss_featured_collection_xxRxtX {
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+    padding-inline:6px;
+  }
+
+  .featured-collection-slider-template--23813059936605__ss_featured_collection_xxRxtX .swiper-slide {
+    display: block;
+    height: auto;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box !important;
+  }
+
+  .featured-collection-items-template--23813059936605__ss_featured_collection_xxRxtX {
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+  }
+
+  .featured-collection-item-template--23813059936605__ss_featured_collection_xxRxtX {
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box !important;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_xxRxtX {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_xxRxtX.has-secondary-template--23813059936605__ss_featured_collection_xxRxtX {
+    position: relative;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_xxRxtX.has-secondary-template--23813059936605__ss_featured_collection_xxRxtX .featured-collection-second-image-template--23813059936605__ss_featured_collection_xxRxtX {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: none;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_xxRxtX img,
+  .featured-collection-image-template--23813059936605__ss_featured_collection_xxRxtX svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-image-template--23813059936605__ss_featured_collection_xxRxtX svg {
+    background-color: gray;
+  }
+
+  .featured-collection-content-template--23813059936605__ss_featured_collection_xxRxtX {
+    padding: 12px 3px;
+  }
+
+  .featured-collection-title-template--23813059936605__ss_featured_collection_xxRxtX {
+    margin: 0px;
+    font-size: 11.9px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: unset;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .featured-collection-price-template--23813059936605__ss_featured_collection_xxRxtX {
+    margin: 0px;
+    margin-top: 9px;
+    font-size: 13.6px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-decoration: none;
+    text-transform: unset;
+  }
+
+  .featured-collection-price-template--23813059936605__ss_featured_collection_xxRxtX span {
+    font-size: 12.6px;
+    font-weight: 400;
+    -webkit-text-decoration: line-through;
+    text-decoration: line-through;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX span,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX span {
+    color: #000000;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX:hover ,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX:hover {
+    transition: all 0.3s ease 0s;
+    border: 1px solid #c4c4c4;
+    background: #f2f2f2;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX:hover span,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX:hover span {
+    fill: #000000;
+    transition: all 0.3s ease 0s;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX.swiper-button-disabled,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX.swiper-button-disabled {
+    opacity: 0.3;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX {
+    left: 3%;
+  }
+
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX {
+    right: 3%;
+  }
+
+  .featured-collection-pagination-template--23813059936605__ss_featured_collection_xxRxtX {
+    position: static !important;
+    height: 3px;
+    
+      margin-top: 15px;
+    
+  }
+
+  .featured-collection-pagination-template--23813059936605__ss_featured_collection_xxRxtX.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #000000;
+  }
+
+  .featured-collection-pagination-template--23813059936605__ss_featured_collection_xxRxtX.hide {
+    display: none;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX .animate-icon,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX .animate-icon {
+    pointer-events: none;
+    place-items: center;
+    display: grid;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX .animate-icon:before,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX .animate-icon:before {
+    content: "";
+    grid-area: 1 / -1;
+    transition: all .2s ease-in-out;
+    width: 8.3px;
+    height: 8.3px;
+    transform: rotate(calc(1 * 45deg));
+    box-sizing: border-box;
+    border-style: solid;
+    border: 0px;
+    border-right: 2px solid currentColor;
+    border-top: 2px solid currentColor;
+    position: relative;
+    left: -1px;
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX .animate-icon:before {
+    left: unset;
+    right: -1px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid currentColor;
+    border-left: 2px solid currentColor;
+  }
+
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX:hover .animate-icon:before {
+    transform: translate(calc(1 * 0.125rem)) rotate(calc(1 * 45deg));
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX:hover .animate-icon:before {
+    transform: translate(calc(-1 * 0.125rem)) rotate(calc(1 * 45deg));
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX .animate-icon:after,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX .animate-icon:after {
+    content: "";
+    grid-area: 1 / -1;
+    transition: all .2s ease-in-out;
+    width: 8px;
+    height: 1.6px;
+    transform-origin: center;
+    opacity: 0;
+    background: currentColor;
+    transform: scaleX(.5);
+  }
+
+  .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX:hover .animate-icon:after,
+  .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX:hover .animate-icon:after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  @media(min-width: 1024px) {
+
+    .section-template--23813059936605__ss_featured_collection_xxRxtX {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .section-template--23813059936605__ss_featured_collection_xxRxtX-settings {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .featured-collection-wrapper-template--23813059936605__ss_featured_collection_xxRxtX h2 {
+      font-size: 40px;
+    }
+
+    .featured-collection-wrapper-template--23813059936605__ss_featured_collection_xxRxtX > p {
+      font-size: 50px;
+    }
+
+    .featured-collection-link-template--23813059936605__ss_featured_collection_xxRxtX {
+      font-size: 18px;
+    }
+
+    .featured-collection-title-template--23813059936605__ss_featured_collection_xxRxtX {
+      font-size: 14px;
+    }
+
+    .featured-collection-price-template--23813059936605__ss_featured_collection_xxRxtX {
+      margin-top: 12px;
+      font-size: 16px;
+    }
+
+    .featured-collection-price-template--23813059936605__ss_featured_collection_xxRxtX span {
+      font-size: 14px;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_xxRxtX {
+      margin-top: 40px;
+    }
+
+    .featured-collection-content-template--23813059936605__ss_featured_collection_xxRxtX {
+      padding: 16px 4px;
+    }
+
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX {
+      width: 50px;
+      height: 50px;
+    }
+
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX,
+    .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX.swiper-button-disabled,
+    .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX.swiper-button-disabled {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_xxRxtX:hover .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX,
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_xxRxtX:hover .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX {
+      opacity: 1;
+      pointer-events: all;
+      transition: all 0.3s ease 0s;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_xxRxtX:hover .featured-collection-btn-prev-template--23813059936605__ss_featured_collection_xxRxtX.swiper-button-disabled,
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_xxRxtX:hover .featured-collection-btn-next-template--23813059936605__ss_featured_collection_xxRxtX.swiper-button-disabled {
+      opacity: 0.3;
+    }
+
+     .featured-collection-pagination-template--23813059936605__ss_featured_collection_xxRxtX {
+      
+        margin-top: 15px;
+      
+    }
+
+  }</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    @media(min-width: 992px) {
+      .featured-collection-items-template--23813059936605__ss_featured_collection_xxRxtX {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+    }
+  </style>
+
+
+
+
+
+
+
+  <style>
+    @keyframes fade-in-template--23813059936605__ss_featured_collection_xxRxtX {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_xxRxtX .swiper-slide:hover .featured-collection-second-image-template--23813059936605__ss_featured_collection_xxRxtX {
+      display: block !important;
+      position: static !important;
+      -webkit-animation: fade-in-template--23813059936605__ss_featured_collection_xxRxtX 0.5s;
+      animation: fade-in-template--23813059936605__ss_featured_collection_xxRxtX 0.5s;
+    }
+
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_xxRxtX .swiper-slide:hover .has-secondary-template--23813059936605__ss_featured_collection_xxRxtX .featured-collection-first-image-template--23813059936605__ss_featured_collection_xxRxtX {
+      display: none;
+    }
+
+    .featured-collection-item-template--23813059936605__ss_featured_collection_xxRxtX:hover .featured-collection-second-image-template--23813059936605__ss_featured_collection_xxRxtX {
+      display: block !important;
+      position: static !important;
+      -webkit-animation: fade-in-template--23813059936605__ss_featured_collection_xxRxtX 0.5s;
+      animation: fade-in-template--23813059936605__ss_featured_collection_xxRxtX 0.5s;
+    }
+
+    .featured-collection-item-template--23813059936605__ss_featured_collection_xxRxtX:hover .has-secondary-template--23813059936605__ss_featured_collection_xxRxtX .featured-collection-first-image-template--23813059936605__ss_featured_collection_xxRxtX {
+      display: none;
+    }
+  </style>
+
+
+
+  <style>
+    .featured-collection-image-template--23813059936605__ss_featured_collection_xxRxtX {
+      aspect-ratio: 1 / 1;
+    }
+  </style>
+
+
+
+
+
+
+
+  <style>
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_xxRxtX {
+      margin-left: -1.5rem !important;
+      margin-right: -1.5rem !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+
+    @media(min-width: 1024px) {
+      .featured-collection-slider-template--23813059936605__ss_featured_collection_xxRxtX {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+      }
+    }
+  </style>
+
+
+
+  <style>
+    .featured-collection-slider-template--23813059936605__ss_featured_collection_xxRxtX {
+      margin-left: -1.5rem !important;
+      margin-right: -1.5rem !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+
+    @media(min-width: 1024px) {
+      .featured-collection-slider-template--23813059936605__ss_featured_collection_xxRxtX {
+        margin-left: -5rem !important;
+        margin-right: -5rem !important;
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+      }
+    }
+  </style>
