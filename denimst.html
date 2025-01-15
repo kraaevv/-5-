@@ -11,37 +11,7 @@
       spaceBetween: 20,
       slidesPerView: 2,
       navigation: {
-        nextEl: '.featured-collection-btn-next-template--23813059936605__ss_featured_collection_4KxzBW',
-        prevEl: '.featured-collection-btn-prev-template--23813059936605__ss_featured_collection_4KxzBW'
-      },
-      pagination: {
-        el: '.featured-collection-pagination-template--23813059936605__ss_featured_collection_4KxzBW',
-        type: 'progressbar'
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: perMobile,
-        },
-        768: {
-          slidesPerView: perMobileBig,
-        },
-        1024: {
-          slidesPerView: perDesktop,
-        }
-      }
-    })
-  }
-  initFeaturedCollection();
-  document.addEventListener('DOMContentLoaded', initFeaturedCollection);
-  if (Shopify.designMode) {
-     document.addEventListener('DOMContentLoaded', initFeaturedCollection);
-     document.addEventListener('shopify:section:select', initFeaturedCollection);
-     document.addEventListener('shopify:section:deselect', initFeaturedCollection);
-     document.addEventListener('shopify:inspector:activate', initFeaturedCollection);
-     document.addEventListener('shopify:section:unload', initFeaturedCollection);
-     document.addEventListener('shopify:section:load', initFeaturedCollection);
-     document.addEventListener('shopify:section:settings:change', initFeaturedCollection);
-  }
+      
 
 </script>
 
